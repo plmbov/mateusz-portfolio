@@ -1,0 +1,67 @@
+.about-me-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E2EBE6;
+    padding: 30px;
+    p{
+        padding: 20px 0 20px 20px;
+        margin: 0;
+        text-align: justify;
+    }
+    .photo-container{
+        width: 100%;
+        min-width: 300px;
+        img{
+            border-radius: 5%;
+        }
+    }
+    .subtitle{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hobby{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        p{
+            text-align: center;
+        }
+        .hobby-icon{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .about-me-page{
+        p{
+            padding: 20px;
+        }
+        .photo-container{
+            display: none;
+        }
+        .hobby{
+            padding: 4px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .about-me-page{
+        padding: 0px;
+        .description-container{
+            width: 95vw;
+        }
+    }
+}

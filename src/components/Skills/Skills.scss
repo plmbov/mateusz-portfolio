@@ -1,0 +1,45 @@
+.skills-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E2EBE6;
+    font-size: 1.5rem;
+    padding: 20px;
+    .skills-category{
+        font-size: 2rem;
+    }
+    .single-skill-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin: 20px;
+            width: 100px;
+            white-space: nowrap;
+        }
+        .skill-rate-circle{
+            padding: 4px;
+        }
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .skills-page{
+        padding: 16px 0;
+        .single-skill-container{
+            width: 95vw;
+            font-size: 1rem;
+            p{
+                margin: 8px 8px 8px 0;
+                width: 80px;
+            }
+        }
+        .skills-category{
+            font-size: 1.5rem;
+            margin: 0 0 8px 0;
+        }
+    }
+}

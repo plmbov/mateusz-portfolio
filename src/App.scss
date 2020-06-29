@@ -1,0 +1,70 @@
+.App{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    transition: ease-in-out 2s;
+  }
+
+p{
+    color: #E2EBE6;
+}
+
+.container{
+    max-height: 100vh;
+    min-width: 10%;
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 1.5s;
+    position: relative;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.about-me{
+    background-color: #1D3542;
+}
+
+.skills{
+    background-color: #205473;
+}
+
+.portfolio{
+    background-color: #5A9CBE;
+}
+
+.contact{
+    background-color: #95C5DF;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 3px;
+    height: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (max-width: 500px){
+    .App{
+      display: flex;
+      flex-direction: column;
+    }
+    .container{
+      overflow-x: hidden;
+    }
+}

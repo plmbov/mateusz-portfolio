@@ -1,0 +1,94 @@
+.portfolio-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3%;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+.carousel.carousel-slider .control-arrow{
+        background-color: #5A9CBE;
+        opacity: .6;
+        &:hover{
+        background-color: #5A9CBE;
+        opacity: .8;
+        }
+}
+
+.carousel .slide .legend{
+bottom: 0;
+width: 65%;
+height: 4rem;
+opacity: 1;
+background-color: #5a9dbecb;
+margin-bottom: 10px;
+overflow-y: auto;
+}
+
+.carousel .control-dots{
+    display: none;
+    background-color: #5A9CBE;
+    margin: 0;
+}
+
+.buttons-contanier{
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    button{
+        color: #E2EBE6;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 10px 10px 0;
+        height: 4rem;
+        font: inherit;
+        background-color: #5A9CBE;
+        font-size: 1vw;
+        white-space: nowrap;
+        transition: ease-in-out .5s;
+        cursor: pointer;
+        &:hover{
+            color: #5A9CBE;
+            background-color: #E2EBE6;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .portfolio-page{
+        border-radius: 5%;
+    }
+    .slide{
+        height: 100%;
+    }
+    .buttons-contanier{
+        right: 50%;
+        transform: translate(50%);
+        width: 100%;
+        bottom: 10px;
+        button{
+            height: 2.5rem;
+            white-space: normal;
+            font-size: 10px;
+            color: #E2EBE6;
+            background-color: #5A9CBE;
+            border: #E2EBE6 2px solid;
+            font-size: .8rem;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+    .carousel .slide .legend{
+        display: none;
+    }
+    .carousel .slide{
+        background-color: transparent;
+    }
+}
